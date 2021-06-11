@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+
+
+
+
+<!-- サーブレットのパラメータ -->
+
+<servlet>
+	<servlet-name>Registration</servlet-name>
+	<servlet-class>jp.co.aforce.registration.Registration</servlet-class>
+
+	<init-param>
+		<param-name>message</param-name>
+		<param-value>servlet-init-param</param-value>
+	</init-param>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Registration</servlet-name>
+	<url-pattern>/registration/registration</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+	<servlet-name>Insert</servlet-name>
+	<servlet-class>jp.co.aforce.registration.Insert</servlet-class>
+
+	<init-param>
+		<param-name>message</param-name>
+		<param-value>servlet-init-param</param-value>
+	</init-param>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Insert</servlet-name>
+	<url-pattern>/registration/Insert</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+	<servlet-name>Change</servlet-name>
+	<servlet-class>jp.co.aforce.registration.Change</servlet-class>
+
+	<init-param>
+		<param-name>message</param-name>
+		<param-value>servlet-init-param</param-value>
+	</init-param>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Change</servlet-name>
+	<url-pattern>/registration/Change</url-pattern>
+</servlet-mapping>
+
+
+	
+</web-app>
